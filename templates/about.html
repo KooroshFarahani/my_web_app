@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Me - My Web App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>About Me</h1>
+        <p>Welcome to the About page of my Flask web application!</p>
+        <p>This is a simple web app built to demonstrate Flask functionality.</p>
+        <p>Feel free to explore and contact me through the main page!</p>
+        <a href="{{ url_for('home') }}">Back to Home</a>
+    </div>
+</body>
+</html>
