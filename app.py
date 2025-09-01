@@ -7,9 +7,15 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
+# صفحه درباره من
 @app.route('/about')
 def about():
     return render_template("about.html")
+
+# صفحه تماس
+@app.route('/contact')
+def contact():
+    return render_template("contact.html")
 
 # دریافت نظر کاربر
 @app.route("/submit", methods=["POST"])
